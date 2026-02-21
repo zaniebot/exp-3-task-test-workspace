@@ -17,3 +17,15 @@ To greet someone by name, use the `--name` flag:
 python hello.py --name Alice
 ```
 This will print `Hello, Alice!` instead of the default message.
+
+## Testing
+
+Run the tests with pytest:
+```bash
+pytest test_hello.py
+```
+
+To see verbose output:
+```bash
+pytest test_hello.py -v
+```
