@@ -1,5 +1,3 @@
-import io
-import sys
 from unittest.mock import patch
 
 from hello import main
