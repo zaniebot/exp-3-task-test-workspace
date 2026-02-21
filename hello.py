@@ -1,5 +1,15 @@
+import argparse
+
+
 def main():
-    print("Hello from the task queue!")
+    parser = argparse.ArgumentParser(description="A simple hello-world script.")
+    parser.add_argument("--name", type=str, default=None, help="Name to greet")
+    args = parser.parse_args()
+
+    if args.name:
+        print(f"Hello, {args.name}!")
+    else:
+        print("Hello from the task queue!")
 
 
 def goodbye():
